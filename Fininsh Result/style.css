@@ -1,0 +1,173 @@
+:root {
+  --bg: #051F4F;
+  --skin: #D5CAC7;
+  --ear: #BBAAA4;
+  --eye: #F9F9F9;
+  --nose: #EEEAE9;
+  --pupil: #212121;
+  --mouth: #8D6E63;
+  --mouth-drip: #43A047;
+  --unibrow: #64B5F5;
+  --hair: #7FD2F8;
+  --hair-shape: polygon(48% 91%, 1% 100%, 18% 79%, 0% 65%, 18% 57%, 0% 38%, 21% 36%, 7% 13%, 31% 21%, 28% 4%, 49% 14%, 72% 2%, 73% 22%, 100% 18%, 85% 45%, 100% 44%, 84% 62%, 100% 75%, 83% 85%, 100% 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--bg);
+}
+
+.container {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  display: block;
+  background: none;
+
+  /* testing purposes */
+  /* border: 1px solid #fff; */
+}
+
+.hair {
+  position: absolute;
+  width: 100%;
+  height: 85%;
+  background: var(--hair);
+  -webkit-clip-path: var(--hair-shape);
+  clip-path: var(--hair-shape);
+}
+
+.ear-l {
+  position: absolute;
+  bottom: 28%;
+  left: 15%;
+  width: 18%;
+  height: 18%;
+  border-radius: 50%;
+  background: var(--ear);
+}
+
+.ear-r {
+  position: absolute;
+  bottom: 28%;
+  right: 15%;
+  width: 18%;
+  height: 18%;
+  border-radius: 50%;
+  background: var(--ear);
+}
+
+.face {
+  position: absolute;
+  left: 25%;
+  bottom: 0;
+  width: 50%;
+  height: 80%;
+  border-radius: 150px;
+  background: var(--skin);
+}
+
+.unibrow {
+  position: absolute;
+  left: 10%;
+  top: 24%;
+  width: 80%;
+  height: 7%;
+  border-radius: 50px;
+  background: var(--unibrow);
+  z-index: 3;
+}
+
+.eye-l {
+  position: absolute;
+  left: 10%;
+  top: 30%;
+  width: 40%;
+  height: 25%;
+  border-radius: 50%;
+  background: var(--eye);
+  z-index: 2;
+}
+
+.eye-r {
+  position: absolute;
+  right: 10%;
+  top: 30%;
+  width: 40%;
+  height: 25%;
+  border-radius: 50%;
+  background: var(--eye);
+  z-index: 2;
+}
+
+.pupil-l {
+  position: absolute;
+  left: 33%;
+  top: 46%;
+  width: 20%;
+  height: 20%;
+  border-radius: 50%;
+  background: var(--pupil)
+}
+
+.pupil-r {
+  position: absolute;
+  right: 32%;
+  top: 32%;
+  width: 20%;
+  height: 20%;
+  border-radius: 50%;
+  background: var(--pupil)
+}
+
+.nose {
+  position: absolute;
+  left: 40%;
+  top: 40%;
+  width: 20%;
+  height: 30%;
+  border-radius: 200px;
+  background: var(--nose);
+}
+
+.mouth {
+  position: absolute;
+  left: 22.5%;
+  bottom: 5%;
+  width: 55%;
+  height: 20%;
+  border-top: 25px solid var(--mouth);
+  border-radius: 150px;
+  overflow: hidden;
+}
+
+.drip-1 {
+  position: absolute;
+  top: -25%;
+  left: 20%;
+  width: 45%;
+  height: 80%;
+  border-radius: 50%;
+  background: var(--mouth-drip);
+  z-index: 4;
+}
+
+.drip-2 {
+  position: absolute;
+  top: -25%;
+  left: 30%;
+  width: 25%;
+  height: 100%;
+  border-radius: 50%;
+  background: var(--mouth-drip);
+  z-index: 4;
+}
