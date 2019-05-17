@@ -1,0 +1,28 @@
+:root {
+  --bg: #051F4F;
+  --skin: #D5CAC7;
+  --ear: #BBAAA4;
+  --eye: #F9F9F9;
+  --nose: #EEEAE9;
+  --pupil: #212121;
+  --mouth: #8D6E63;
+  --mouth-drip: #43A047;
+  --unibrow: #64B5F5;
+  --hair: #7FD2F8;
+  --hair-shape: polygon(48% 91%, 1% 100%, 18% 79%, 0% 65%, 18% 57%, 0% 38%, 21% 36%, 7% 13%, 31% 21%, 28% 4%, 49% 14%, 72% 2%, 73% 22%, 100% 18%, 85% 45%, 100% 44%, 84% 62%, 100% 75%, 83% 85%, 100% 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--bg);
+}
+

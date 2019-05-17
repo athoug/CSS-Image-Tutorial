@@ -1,0 +1,34 @@
+{
+  "name": "css-image-tutorial",
+  "version": "1.0.0",
+  "description": "A tutorial on how to make vector images using CSS",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/athoug/CSS-Image-Tutorial.git"
+  },
+  "keywords": [
+    "css",
+    "images",
+    "vector",
+    "graphics",
+    "web",
+    "dev"
+  ],
+  "author": "athoug",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/athoug/CSS-Image-Tutorial/issues"
+  },
+  "homepage": "https://github.com/athoug/CSS-Image-Tutorial#readme",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "gulp-clean-css": "^4.2.0",
+    "gulp-autoprefixer": "^6.1.0"
+  }
+}
